@@ -200,3 +200,27 @@ body {
     z-index: 1000;
   }
 }
+/* ================= FOOTER ================= */
+.site-footer {
+  background: var(--bg);
+  text-align: center;
+}
+
+.footer-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.site-footer p {
+  padding: 10px 0 12px; /* mindre afstand til billedet */
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: var(--logo);
+}
+/* ================= FOOTER – MOBIL ================= */
+@media (max-width: 899px) {
+  .site-footer p {
+    font-size: 10px; /* mindre tekst på mobil */
+  }
+}
