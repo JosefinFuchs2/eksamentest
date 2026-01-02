@@ -55,7 +55,6 @@
   object-fit: cover;
 }
 
-/* giv lidt “luft” som i prototype */
 .about-text,
 .work-text {
   padding-top: 30px;
@@ -270,4 +269,7 @@
   .ommig > .row:last-of-type .row-img {
     height: 260px;
   }
+}
+.about-text p {
+  margin-bottom: 20px;
 }
