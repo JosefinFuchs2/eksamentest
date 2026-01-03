@@ -62,6 +62,9 @@ body {
   color: var(--nav);
   text-decoration: none;
   line-height: 1;
+  white-space: nowrap;
+
+  transition: font-weight 0.2s ease, color 0.2s ease;
 }
 
 /* Burger (mobil) */
@@ -154,6 +157,7 @@ body {
     display: none !important;
   }
 }
+
 /* ================= MOBIL MENU (ÅBEN / BRUN OVERLAY) ================= */
 @media (max-width: 899px) {
   /* skjult som udgangspunkt */
@@ -188,6 +192,9 @@ body {
     text-transform: uppercase;
     line-height: 1.05;
   }
+  .site-header.open .nav-mobile a:active {
+    opacity: 0.6;
+  }
 
   /* burger bliver lys */
   .site-header.open .burger span {
@@ -202,7 +209,6 @@ body {
 }
 /* ================= FOOTER ================= */
 .site-footer {
-  background: var(--bg);
   text-align: center;
 }
 
@@ -216,7 +222,6 @@ body {
   padding: 10px 0 12px; /* mindre afstand til billedet */
   font-family: "Poppins", sans-serif;
   font-size: 14px;
-  color: var(--logo);
 }
 /* ================= FOOTER – MOBIL ================= */
 @media (max-width: 899px) {
@@ -229,7 +234,7 @@ body {
   display: inline-block;
   padding: 12px 36px;
 
-  background-color: #f5f4f0;
+  background-color: #ffffff;
   border: 1px solid #898a84;
 
   color: #554129;
@@ -246,10 +251,22 @@ body {
 }
 
 .btn:hover {
-  background-color: #e6e4de;
+  background-color: #554129;
+  color: #f8f8f6;
   font-weight: 600;
 }
 
 .btn:active {
   background-color: #dad7cf;
+}
+/* ================= DESKTOP HOVER ================= */
+@media (min-width: 900px) {
+  .nav-desktop a {
+    transition: font-weight 0.2s ease, color 0.2s ease;
+  }
+
+  .nav-desktop a:hover {
+    font-weight: 700;
+    color: var(--logo);
+  }
 }
