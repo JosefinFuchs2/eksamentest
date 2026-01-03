@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poly&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="generel.css" />
+    <link rel="stylesheet" href="portfolio.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="logo">JOSEFIN FILIPPA FUCHS</a>
+
+        <nav class="nav-desktop">
+          <a href="ommig.html">Om mig</a>
+          <a href="gweb.html">Grundl. web</a>
+          <a href="uxui.html">UX/UI</a>
+          <a href="animation.html">Animation</a>
+          <a href="gindhold.html">Grundl. indhold</a>
+          <a href="portfolio.html">Portfolio</a>
+        </nav>
+
+        <button class="burger" aria-label="Åbn menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <nav class="nav-mobile">
+        <a href="ommig.html">Om mig</a>
+        <a href="gweb.html">Grundl. web</a>
+        <a href="uxui.html">UX/UI</a>
+        <a href="animation.html">Animation</a>
+        <a href="gindhold.html">Grundl. indhold</a>
+        <a href="portfolio.html">Portfolio</a>
+      </nav>
+    </header>
+
+    <main class="portfolio">
+      <!-- INTRO -->
+      <section class="section intro">
+        <div class="wrap">
+          <h1 class="title">PORTFOLIO</h1>
+          <p class="lead">
+            I dette tema samlede og videreudvikler jeg mit arbejde fra hele 1.
+            semester i et portfolio-website. Fokus er på at præsentere mine
+            projekter, processer og faglige kompetencer inden for design,
+            udvikling og indholdsproduktion. Temaet afsluttes med en individuel
+            mundtlig eksamen, hvor jeg reflekterer over min læring og udvikling
+            gennem semesteret.
+          </p>
+        </div>
+      </section>
+
+      <!-- BILLEDE 1 (stor, centreret) -->
+      <section class="section">
+        <div class="wrap wrap-wide">
+          <img
+            class="shot big-shot"
+            src="img/7/portfolio1.webp"
+            alt="Portfolio screenshot 1"
+          />
+        </div>
+      </section>
+
+      <!-- PROCES (tekst venstre, billede højre) -->
+      <section class="section">
+        <div class="wrap wrap-wide process-grid">
+          <div class="text-card text-pad">
+            <h2 class="subTitle">PROCES</h2>
+            <p class="p">
+              Jeg arbejdede med at samle alt mit materiale fra semesteret og
+              skabe en rød tråd på tværs af siderne. Først lavede jeg struktur
+              og indhold (sitemap, wireframes og tekstindhold), og derefter
+              byggede jeg layout og styling i HTML og CSS.
+            </p>
+            <p class="p">
+              Undervejs testede jeg løbende på forskellige skærmstørrelser,
+              justerede margin/padding og sørgede for en ensartet typografi og
+              farvepalette, så siden føles sammenhængende.
+            </p>
+
+            <a class="btn" href="#">Figma</a>
+          </div>
+
+          <div class="img-card">
+            <img
+              class="shot small-shot"
+              src="img/7/portfolio2.webp"
+              alt="Portfolio screenshot 2"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- BILLEDE 3 (stor, centreret) -->
+      <section class="section">
+        <div class="wrap wrap-wide">
+          <img
+            class="shot big-shot"
+            src="img/7/portfolio3.webp"
+            alt="Portfolio screenshot 3"
+          />
+        </div>
+      </section>
+
+      <!-- LØSNING & LÆRING (billede venstre, tekst højre) -->
+      <section class="section solution">
+        <div class="wrap wrap-wide solution-grid">
+          <div class="img-card">
+            <img
+              class="shot small-shot"
+              src="img/7/portfolio4.webp"
+              alt="Portfolio screenshot 4"
+            />
+          </div>
+
+          <div class="text-card text-pad">
+            <h2 class="subTitle">
+              LØSNING &amp;<br />
+              LÆRING
+            </h2>
+
+            <p class="p">
+              Portfolio-siden viser mine projekter samlet i et ensartet design,
+              hvor navigation og layout gør det nemt at få overblik. Siden er
+              responsiv og tilpasser sig mobil og desktop, så indholdet altid
+              fremstår læsbart.
+            </p>
+            <p class="p">
+              Jeg har lært at planlægge en løsning fra idé til færdigt website
+              og at omsætte en prototype til kode. Jeg har også fået mere
+              erfaring med CSS grid/flexbox, struktur i HTML og at arbejde
+              systematisk med styling på tværs af flere sider.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <img src="footer.webp" alt="Illustreret footer" class="footer-image" />
+      <p>Portfolio af Josefin Filippa Fuchs</p>
+    </footer>
+
+    <script src="generel.js"></script>
+  </body>
+</html>
