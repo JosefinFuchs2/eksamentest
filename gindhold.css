@@ -1,0 +1,274 @@
+.gindhold {
+  padding: 0 0 40px;
+}
+
+/* Normal container  */
+.wrap {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Wide wrap */
+.wrap-wide {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+/* Billeder generelt */
+.shot {
+  width: 100%;
+  display: block;
+}
+
+/* HERO */
+.hero-full {
+  padding: 0;
+  margin: 0;
+}
+
+.hero-shot {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 0;
+  display: block;
+}
+
+/* INTRO */
+.intro {
+  text-align: center;
+  padding-top: 110px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+.title {
+  font-family: "Poly", serif;
+  font-size: 34px;
+  letter-spacing: 1px;
+  color: #3c2f26;
+  margin: 0 0 10px;
+}
+
+.lead {
+  max-width: 90ch;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 1.85;
+  color: #898a84;
+}
+
+/* TEKST */
+.text-card {
+  padding: 0;
+}
+
+.subTitle {
+  font-family: "Poly", serif;
+  font-size: 28px;
+  letter-spacing: 1px;
+  color: #3c2f26;
+  margin: 0 0 10px;
+  line-height: 1.1;
+}
+
+.p {
+  font-size: 13px;
+  line-height: 1.85;
+  color: #898a84;
+  margin: 0 0 12px;
+  max-width: 62ch;
+}
+
+/* KNAP */
+.text-card .btn {
+  display: block;
+  width: fit-content;
+  margin: 18px auto 0;
+}
+
+/* ===== 4 billeder ===== */
+.thumbs {
+  display: grid;
+  grid-template-columns: repeat(4, 367px); /* vælger størrelsen */
+  justify-content: center;
+  gap: 12px; /* afstand mellem telefoner */
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.thumb {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: contain;
+  display: block;
+}
+
+/* ===== PROCES ===== */
+.process-grid {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 60px;
+  align-items: start;
+  margin-top: 0px;
+}
+
+.media-card {
+  width: 100%;
+}
+
+.process-shot {
+  height: auto;
+  object-fit: contain;
+}
+
+/* ===== LØSNING & LÆRING ===== */
+.solution-section {
+  margin-top: 120px;
+}
+
+.solution-grid {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.solution-shot {
+  width: 100%;
+  max-width: 700px;
+  margin-left: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* ================= MOBIL ================= */
+/* intro-billede findes kun til mobil */
+.intro-media {
+  display: none;
+}
+@media (max-width: 899px) {
+  /* HERO */
+  .hero-shot {
+    height: 260px;
+    object-fit: cover;
+  }
+
+  /* INTRO */
+  .intro {
+    padding-top: 16px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .title {
+    font-size: 25px; /* mindre på mobil */
+    line-height: 1.1;
+    word-break: break-word;
+  }
+
+  /* wrap-wide mindre padding på mobil */
+  .wrap-wide {
+    padding: 0 24px;
+  }
+
+  /* 4 billeder: 2 + 2 */
+  .thumbs {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    max-width: 100%;
+    margin-bottom: 60px; /* mere luft før proces */
+  }
+
+  /* ===== PROCES – MOBIL ===== */
+  .process-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 0;
+  }
+
+  .process-text {
+    order: -1; /* TEKST KOMMER FØRST */
+    text-align: center;
+    padding-left: 0 !important;
+    padding-right: 0;
+  }
+
+  .process-text .p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .process-shot {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* ===== LØSNING & LÆRING ===== */
+  .solution-grid {
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+  }
+
+  .solution-text {
+    text-align: center;
+    padding-left: 0 !important; /* nulstiller indrykning KUN på mobil */
+    padding-right: 0;
+  }
+
+  .solution-shot {
+    max-width: 100%;
+    margin: 0 auto; /* centrer billedet */
+    height: auto;
+    object-fit: contain;
+  }
+  /* mere luft mellem hero og intro (kun mobil) */
+  .hero-full {
+    margin-bottom: 24px;
+  }
+
+  /* mere luft mellem intro og thumbnails */
+  .section.intro {
+    margin-bottom: 32px;
+  }
+
+  /* mere luft mellem thumbnails og proces */
+  .thumbs-section {
+    margin-bottom: 70px;
+  }
+
+  /* afstand mellem knap og billede */
+  .process-text .btn {
+    margin-bottom: 24px;
+  }
+
+  .solution-text .btn {
+    margin-bottom: 24px;
+  }
+  .intro-media {
+    display: block;
+    margin-top: 24px;
+    margin-bottom: 32px;
+  }
+
+  .intro-shot {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  .process-grid > .media-card {
+    display: none;
+  }
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+.thumbs-section {
+  margin-top: 100px;
+}
