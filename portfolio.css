@@ -193,3 +193,70 @@
     margin-bottom: 80px;
   }
 }
+@media (min-width: 900px) {
+  /* store billeder */
+  .big-shot {
+    max-width: 980px;
+    margin: 0 auto 60px;
+  }
+
+  /* PROCES + LØSNING på samme bane */
+  .process-grid,
+  .solution-grid {
+    max-width: 980px;
+    margin: 0 auto;
+    display: grid;
+    align-items: start;
+    column-gap: 80px;
+  }
+
+  /* PROCES: tekst venstre, billede højre */
+  .process-grid {
+    grid-template-columns: 480px 520px;
+    margin-top: 60px;
+    margin-bottom: 90px;
+  }
+
+  /* LØSNING: billede venstre, tekst højre */
+  .solution-grid {
+    grid-template-columns: 520px 480px;
+    column-gap: 110px; /* gør teksten mere ind mod midten */
+  }
+
+  /* VIGTIGT: fjern small-shot centrerings-margin på desktop */
+  .process-grid .small-shot,
+  .solution-grid .small-shot {
+    max-width: none;
+    margin: 0;
+  }
+
+  /* Billederne: 100% ens */
+  .square-shot {
+    width: 520px;
+    height: 520px;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+  }
+
+  /* Placering af billederne i hver grid */
+  .process-grid .img-card {
+    display: flex;
+    justify-content: flex-end; /* portfolio2 helt til højre */
+  }
+
+  .solution-grid .img-card {
+    display: flex;
+    justify-content: flex-start; /* portfolio4 helt til venstre */
+  }
+
+  /* LØSNING-teksten mere ind mod midten */
+  .solution-grid .text-pad {
+    padding-right: 110px;
+  }
+}
+@media (min-width: 900px) {
+  body {
+    outline: 8px solid red;
+  }
+}
