@@ -139,8 +139,11 @@
 
   /* INTRO */
   .intro {
-    padding-top: 28px;
+    padding-top: 60px;
     padding-bottom: 40px;
+  }
+  .intro .lead {
+    margin-bottom: 34px;
   }
 
   .title {
@@ -150,7 +153,7 @@
   /* ===== MID (PROCES) ===== */
   .mid-grid {
     grid-template-columns: 1fr; /* tekst under billeder */
-    row-gap: 32px;
+    row-gap: 60px;
   }
 
   .mid-grid .two-shots {
@@ -198,6 +201,10 @@
   /* sørger for at billederne kommer først */
   .bottom-grid .two-shots {
     order: -1;
-    margin-bottom: 32px;
+    margin-bottom: 8px;
+  }
+  /* MINDRE luft mellem PROCES (Figma-knap) og næste sektion (gweb3/gweb4) */
+  .bottom-grid {
+    margin-top: 60px; /* prøv 16px hvis du vil have den endnu tættere */
   }
 }
