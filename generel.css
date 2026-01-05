@@ -153,8 +153,9 @@ body {
     display: none;
   }
 
-  .nav-mobile {
-    display: none !important;
+  .nav-mobile,
+  .site-header.open .nav-mobile {
+    display: none;
   }
 }
 
