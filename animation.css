@@ -184,10 +184,10 @@
     margin-top: 0;
   }
 
-  .process-text {
+  .process-grid .process-text {
     order: -1; /* TEKST KOMMER FØRST */
     text-align: center;
-    padding-left: 0 !important;
+    padding-left: 0;
     padding-right: 0;
   }
 
@@ -208,9 +208,9 @@
     row-gap: 32px;
   }
 
-  .solution-text {
+  .solution-grid .solution-text {
     text-align: center;
-    padding-left: 0 !important; /* nulstil indrykning på mobil */
+    padding-left: 0;
     padding-right: 0;
   }
 
