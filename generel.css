@@ -348,6 +348,15 @@ body.no-scroll {
     padding-top: 56px;
   }
 }
-body {
-  padding-top: 30px;
+
+@media (min-width: 900px) {
+  body {
+    padding-top: 34px;
+  }
+}
+
+@media (max-width: 899px) {
+  body.no-scroll {
+    padding-top: 0;
+  }
 }
